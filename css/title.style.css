@@ -258,22 +258,23 @@ main {
 
 /* ====== Media query max-width of 721px, designed for Phone size at 320px ====== */
 
-@media only screen and (max-width:921px){
+@media only screen and (max-width:721px){
     
     #search_menu_container{
-        width:6rem;
+        width:3rem;
     }
-    
+    /* ========= Removed from original layout =================
     #search{
         width:44%;
     }
-    
+    */
     #search_container{
         display:none;
     }
     
     #menu{
         width:44%;
+        float:none;
     }
     
     #menu_container{
@@ -282,7 +283,41 @@ main {
     
 }
 
+/* ====== Media query max-width of 529px ====== */
 
+@media only screen and (max-width:529px){
+    
+    #city_of_madera_container {
+        width: 22rem;
+    }
+    
+    #triangle{
+        width: 0;
+        height: 0;
+        float: left;
+        border-top: 56px solid #b585ce;
+        border-right: 56px solid transparent;
+    }
+    /*
+    #search_menu_container{
+        float:none;
+    }
+    */
+    #menu_bar{
+        font-size: 1.2rem;
+        height:3.5rem;
+    }
+    
+    .menu_bar_top {
+        top: 1.1rem;
+    }
+    
+    #degree{
+        top: 1.1rem;
+        font-size:1.2rem;
+    }
+    
+}
 
 
 
