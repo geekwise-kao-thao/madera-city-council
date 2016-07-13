@@ -1,0 +1,243 @@
+/*
+
+#b585ce = purple
+#e6e8e7 = lightgrey
+
+*/
+
+@import url("//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css");
+
+
+html, body, p, h1{
+    margin:0;
+    padding:0;
+}
+
+body{
+    text-align:center;
+    box-sizing: border-box;
+    font-size:62.5%;
+    width:100%;
+    height:auto;
+}
+
+a{
+    text-decoration: none;
+}
+
+div{
+    display: inline-block
+}
+
+.uppercase{
+    text-transform: uppercase;
+}
+
+.underline{
+    text-decoration:underline;
+}
+
+#menu_bar{
+    width:100%;
+    height:5rem;
+    font-size:1.5rem;
+    background-color:#e6e8e7;
+    font-family: sans-serif;
+}
+
+.menu_bar_top{
+    position:relative;
+    top:1.5rem;
+}
+
+.float_right{
+    float:right;
+}
+
+.float_left{
+    float:left;
+}
+
+#city_of_madera_container{
+    height:100%;
+    width:40%;
+}
+
+#city_of_madera{
+    float:left;
+    height:100%;
+    width:50%;
+    background-color:#b585ce;
+    color:#ffffff;
+}
+
+#triangle{
+	width: 0;
+	height: 0;
+	float:left;
+	border-top: 80px solid #b585ce;
+	border-right: 80px solid transparent;
+}
+
+#degree {
+    color: #ffffff;
+    position: relative;
+    top: 1.5rem;
+    left:-30px;
+}
+
+#degree_icon{
+    font-size:.5rem;
+    position: relative;
+    top: -10px;
+    left: 1px;
+}
+
+#search_menu_container{
+    height:100%;
+    width:18rem;
+    color:#b585ce;
+    margin-right: 2rem;
+}
+
+.menu_bar_icon_container{
+    height:2.5rem;
+    width:2.5rem;
+    color:#000000;
+}
+
+.icon_position_top{
+    position:relative;
+    top:5px;
+}
+
+#search{
+    width:50%;
+    height:auto;
+}
+
+#menu{
+    width:40%;
+    height:auto;
+}
+
+/****COMMENCE MAYOR IMAGE SECTION****/
+
+main {
+    position: relative;
+    top: -2px;
+}
+
+#city-council-first-section{
+    width:100%;
+    height:550px;
+    display:block;
+    font-family: 'Prompt', sans-serif;
+    color:#b585ce;
+    font-size:5rem;
+    font-weight:800;
+}
+
+#mayor{
+    width:55%;
+    height:100%;
+    float:left;
+}
+
+#mayor img{
+    margin:0 auto;
+    width: 100%;
+    height:auto;
+    
+}
+
+#first-name-last-name{
+    width:calc(90%/2);
+    height:100%;
+    
+}
+
+#mayor_title_container{
+    width:100%;
+    height:50%;
+    text-align:center;
+    float:left;
+}
+
+#mayor_title{
+    position: relative;
+    top: 50%;
+    letter-spacing: -2px;
+    transform: translateY(-50%);
+    /*position:relative;*/
+    /*top:95px;*/
+    /*letter-spacing:-2px;*/
+}
+
+#mayor_name_container{
+    width:100%;
+    height:50%;
+    text-align:center;
+    float:left;
+    background-color:#f2e6ff;
+}
+
+.mayor_name{
+    position:relative;
+    top:30px;
+    letter-spacing:-2px;
+    height:30%;
+}
+
+
+/****CONCLUDE MAYOR IMAGE SECTION****/
+
+/****SECTION BELOW THE MAYOR IMAGE****/
+
+.color_purple{
+    color:#b585ce;
+}
+
+.width_90_percent{
+    width:90%;
+    margin-top:1rem;
+}
+
+.underline{
+    text-decoration:underline;
+}
+
+.about_mayor_height{
+    height:250px;
+}
+
+#about-mayor{
+    height:auto;
+    width:100%;
+    margin-top:80px;
+}
+
+#about-mayor-first-and-last-name{
+    width:55%;
+    float:left;
+}
+
+#mayor_story{
+    font-size:1.8rem;
+}
+
+.more_info_about_mayor{
+    font-size:1.3rem;
+}
+
+#right-side{
+    float:right;
+    width:45%;
+    color:#b585ce;
+    background-color:#f2e6ff;
+}
+#right-side a{
+    
+     color:#b585ce;
+     
+}
