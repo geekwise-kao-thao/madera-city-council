@@ -217,6 +217,8 @@ main {
 .link_label{
     position:relative;
     top:4.5rem;
+    width: 90%;
+    display: inline-block;
 }
 
 .link_icon{
@@ -286,6 +288,10 @@ main {
         display:none;
     }
     
+    .link_label{
+        font-size:.8rem;
+    }
+    
 }
 
 /* ====== Media query max-width of 529px ====== */
@@ -320,6 +326,10 @@ main {
     #degree{
         top: 1.1rem;
         font-size:1.2rem;
+    }
+    
+    .link_label{
+        font-size:.6rem;
     }
     
 }
@@ -362,6 +372,15 @@ main {
         top: 0px;
     }
     
+    
+}
+
+@media only screen and (max-width:357px){
+    
+    .outside_link_icon{
+        position:relative;
+        top:6.3rem;
+    }
     
 }
 
