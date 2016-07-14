@@ -4,15 +4,20 @@ document.addEventListener('DOMContentLoaded',function(event){
     var the_mayor_picture = document.getElementById('the_mayor_picture');
     
     window.addEventListener('resize',function(event){
-        console.log(the_mayor_picture.height);
         
-        if(window.screen.width >= 530){
+        console.log(document.body.offsetWidth);
+       
+        if(document.body.offsetWidth >= 513){
             mayor_first_last_container.style.height = the_mayor_picture.height + 'px';
+        } else if(document.body.offsetWidth <= 512){
+            mayor_first_last_container.style.height = 'auto';
         };
         
-        if(window.screen.width <= 529){};
-        
     });
+    
+    if(document.body.offsetWidth <= 512){
+        mayor_first_last_container.style.height = 'auto';
+    }
     
 });
 
