@@ -46,23 +46,27 @@
             
             <!--***DEGREE TEMP COMMENTED OUT FOR THE COUNCIL PAGE ***-->
             <div class='float_right' id='search_menu_container'>
+                
+                <!-- =============================== Removed from original layout =======================
                 <div id='search' class='float_left menu_bar_top'>
                     <a>
                         <div class='float_left menu_bar_icon_container'>
                             <i class="fa fa-search fa-flip-horizontal icon_position_top" aria-hidden="true"></i>
                         </div>
-                        <p class='float_right icon_position_top'>
+                        <p class='float_right icon_position_top' id='search_container'>
                             search
                         </p>
                     </a>
                     
                 </div>
+                ========================================================================================== -->
+                
                 <div id='menu' class='float_right menu_bar_top'>
                     <a>
                         <div class='float_left menu_bar_icon_container'>
                             <i class="fa fa-bars icon_position_top" aria-hidden="true"></i>
                         </div>
-                        <p class='float_right icon_position_top'>
+                        <p class='float_right icon_position_top' id='menu_container'>
                             menu
                         </p>
                     </a>
@@ -72,34 +76,37 @@
             
         </div>
         
-        
-        
         <main>
-            <section id="city-council-first-section">
-                <div id='mayor'>
-                    <img src="http://i.imgur.com/ueMmvLk.png"></img>
+            <section id="hero_section">
+                <div id='mayor_image_container' class='float_left'>
+                    <img src="https://i.imgur.com/ueMmvLk.png" id='the_mayor_picture'></img>
                 </div>
-                
-                <div id='first-name-last-name'>
-                    <div id='mayor_title_container'>
-                        <p id='mayor_title' class='uppercase'>
+                <div id='mayor_first_last_container' class='float_left font_prompt'>
+                    <div id='new_mayor_title_container' class='uppercase'>
+                        <p class='uppercase'>
                             mayor
                         </p>
                     </div>
-                    <div id='mayor_name_container'>
-                        <p class='mayor_name uppercase'>
+                    <div id='first_last_name_container'>
+                        <p class='uppercase'>
                             first name
                         </p>
-                        <p class='mayor_name uppercase'>
+                        <p class='uppercase'>
                             last name
                         </p>
                     </div>
                 </div>
+                
             </section>
+            
+            
+            <!-- ====== Div added to give space between hero and main section ====== -->
+            <div id='extra_space'></div>
+            
             <section id='about-mayor'>
                 <div id='about-mayor-first-and-last-name'>
                     <a href='#'>
-                        <p class='color_purple uppercase underline' id='mayor_story'>
+                        <p class='color_purple uppercase underline font_prompt' id='mayor_story'>
                             about mayor first &amp last name
                         </p>
                     </a>
@@ -108,11 +115,11 @@
                     <div class='width_90_percent  about_mayor_height'>
                         <a href='#'>
                             <div class='float_left'>
-                                <p class='float_left color_purple underline uppercase more_info_about_mayor underline'>
+                                <p class='font_prompt float_left color_purple underline uppercase more_info_about_mayor underline'>
                                     professional affiliation/
                                 </p>
                                 <br>
-                                <p class='float_left color_purple underline uppercase more_info_about_mayor underline'>
+                                <p class='font_prompt float_left color_purple underline uppercase more_info_about_mayor underline'>
                                     other public services
                                 </p>
                             </div>
@@ -120,15 +127,15 @@
                     </div>
                     <div class='width_90_percent about_mayor_height'>
                         <a href='#'>
-                            <p class='float_left color_purple underline uppercase more_info_about_mayor underline'>
+                            <p class='text_align_left font_prompt float_left color_purple underline uppercase more_info_about_mayor underline'>
                                 awards and special achievments
                             </p>
                         </a>
                     </div>
                     <div class='width_90_percent about_mayor_height'>
                         <a href='#'>
-                            <p class='float_left color_purple underline uppercase more_info_about_mayor underline'>
-                                contact mayor poythress
+                            <p class='text_align_left font_prompt float_left color_purple underline uppercase more_info_about_mayor underline'>
+                                contact mayor poythress awards and special achievments
                             </p>
                         </a>
                     </div>
