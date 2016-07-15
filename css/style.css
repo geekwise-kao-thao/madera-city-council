@@ -1,12 +1,21 @@
 /*
+Madera City Council | Page Title CSS
 
-#b585ce = purple
-#e6e8e7 = lightgrey
+Table of Contents
 
+1.0  Global Selectors
+2.0  HTML Element Id's and Classes
+3.0  Colors
+4.0  Media Queries
 */
+
+/* Import url for fontawesome to work */
 
 @import url("//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css");
 
+/* ====================
+   1.0 Global Selectors
+   ==================== */
 
 html, body, p, h1{
     margin:0;
@@ -19,6 +28,11 @@ body{
     font-size:62.5%;
     width:100%;
     height:auto;
+}
+
+main {
+    position: relative;
+    top: -2px;
 }
 
 a{
@@ -37,9 +51,31 @@ div{
     text-decoration:underline;
 }
 
+.float_right{
+    float:right;
+}
+
+.float_left{
+    float:left;
+}
+
+.text_align_left{
+    text-align: left;
+}
+
 .font_prompt{
     font-family: 'Prompt', sans-serif;
 }
+
+.color_purple{
+    color:#b585ce;
+}
+
+/* =================================
+   2.0 HTML Element Id's and Classes
+   ================================= */
+   
+/* ====== Header navigation menu bar ====== */
 
 #menu_bar{
     width:100%;
@@ -54,21 +90,9 @@ div{
     top:1.5rem;
 }
 
-.float_right{
-    float:right;
-}
-
-.float_left{
-    float:left;
-}
-
-.text_align_left{
-    text-align: left;
-}
-
 #city_of_madera_container{
     height:100%;
-    width:40%;
+    width: 36.5rem;
 }
 
 #city_of_madera{
@@ -80,11 +104,11 @@ div{
 }
 
 #triangle{
-	width: 0;
-	height: 0;
-	float:left;
-	border-top: 80px solid #b585ce;
-	border-right: 80px solid transparent;
+    width: 0;
+    height: 0;
+    float:left;
+    border-top: 80px solid #b585ce;
+    border-right: 80px solid transparent;
 }
 
 #degree {
@@ -129,14 +153,7 @@ div{
     height:auto;
 }
 
-/****COMMENCE MAYOR IMAGE SECTION****/
-
-main {
-    position: relative;
-    top: -2px;
-}
-
-/* === testing new hero section for better responsiveness === */
+/* ====== Hero section ====== */
 
 #hero_section{
     width:100%;
@@ -189,22 +206,11 @@ main {
     height:30%;
 }
 
-
-/****CONCLUDE MAYOR IMAGE SECTION****/
-
-/****SECTION BELOW THE MAYOR IMAGE****/
-
-.color_purple{
-    color:#b585ce;
-}
+/* ====== Main section ====== */
 
 .width_90_percent{
     width:90%;
     margin-top:1rem;
-}
-
-.underline{
-    text-decoration:underline;
 }
 
 .about_mayor_height{
@@ -252,6 +258,24 @@ main {
     display: none;
 }
 
+
+/* ====================
+   3.0 Colors
+   ==================== */
+
+/*
+
+#b585ce = purple
+#e6e8e7 = lightgrey
+
+*/
+
+/* ====================
+   4.0 Media Queries
+   ==================== */
+
+/* ====== Start of media queries for City of Madera city council template ====== */
+
 /* ====== Media query max-width of 1140px ====== */
 
 @media only screen and (max-width:1140px){
@@ -288,8 +312,9 @@ main {
     
 }
 
-
 /* ====== Media query max-width of 921px, designed for Tablet size at 768px ====== */
+
+/* This header media query max width at 921px will be use for all templates */
 
 @media only screen and (max-width:921px){
     
@@ -311,7 +336,6 @@ main {
     }
     
 }
-
 
 @media only screen and (max-width:850px){
     
@@ -350,14 +374,6 @@ main {
     
     #search_menu_container{
         width:3rem;
-    }
-    /* ========= Removed from original layout =================
-    #search{
-        width:44%;
-    }
-    */
-    #search_container{
-        display:none;
     }
     
     #menu{
@@ -543,47 +559,13 @@ main {
         width:60%;
         float:left;
     }
+    
     .menu_bar_icon_container{
         width:1.5rem;
     }
     
     main{
         font-size:.7rem;
-    }
-    
-    #page_title{
-        font-size:2rem;
-    }
-    
-    #line{
-        width:100%;
-    }
-    
-    #inside_link{
-        width:100%;
-    }
-    
-    #inside_link > div{
-        width:100%;
-        height:4rem;
-    }
-    
-    .link_label{
-        top:1.5rem;
-    }
-    
-    .link_icon{
-        top: 1.5rem;
-        right: .5rem;
-    }
-    
-    #outside_link{
-        width:100%;
-    }
-    
-    #outside_link > div{
-        width:100%;
-        height:4rem;
     }
     
     #mayor_first_last_container {
