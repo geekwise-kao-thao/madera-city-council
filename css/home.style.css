@@ -1,0 +1,629 @@
+/*
+Madera City Council | Page Title CSS
+
+Table of Contents
+
+1.0  Global Selectors
+2.0  HTML Element Id's and Classes
+3.0  Colors
+4.0  Media Queries
+*/
+
+/* Import url for fontawesome to work */
+
+@import url("//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css");
+
+/* ====================
+   1.0 Global Selectors
+   ==================== */
+
+html, body, main, p, h1, div, img, section{
+    margin:0;
+    padding:0;
+    border:0;
+}
+
+body{
+    text-align:center;
+    box-sizing: border-box;
+    font-size:0%;
+    width:100%;
+    height:auto;
+}
+/*
+main {
+    position: relative;
+    top: -2px;
+}
+*/
+a{
+    text-decoration: none;
+}
+
+div{
+    display: inline-block
+}
+
+.uppercase{
+    text-transform: uppercase;
+}
+
+.underline{
+    text-decoration:underline;
+}
+
+.float_right{
+    float:right;
+}
+
+.float_left{
+    float:left;
+}
+
+.text_align_left{
+    text-align: left;
+}
+
+.font_prompt{
+    font-family: 'Prompt', sans-serif;
+}
+
+.color_purple{
+    color:#b585ce;
+}
+
+.background_color_lightgrey{
+    background-color:#e6e8e7;
+}
+
+/* =================================
+   2.0 HTML Element Id's and Classes
+   ================================= */
+   
+/* ====== Header navigation menu bar ====== */
+
+#menu_bar{
+    width:100%;
+    height:5rem;
+    font-size:1.5rem;
+    background-color:#e6e8e7;
+    font-family: sans-serif;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    left: 0;
+    opacity: .9;
+}
+
+.menu_bar_top{
+    position:relative;
+    top:1.5rem;
+}
+
+#city_of_madera_container{
+    height:100%;
+    width: 36.5rem;
+}
+
+#city_of_madera{
+    float:left;
+    height:100%;
+    width:50%;
+    background-color:#b585ce;
+    color:#ffffff;
+}
+
+#triangle{
+    width: 0;
+    height: 0;
+    float:left;
+    border-top: 80px solid #b585ce;
+    border-right: 80px solid transparent;
+}
+
+#degree {
+    color: #ffffff;
+    position: relative;
+    top: 1.5rem;
+    left:-30px;
+}
+
+#degree_icon{
+    font-size:.5rem;
+    position: relative;
+    top: -10px;
+    left: 1px;
+}
+
+#search_menu_container{
+    height:100%;
+    width:18rem;
+    color:#b585ce;
+    margin-right: 2rem;
+}
+
+.menu_bar_icon_container{
+    height:2.5rem;
+    width:2.5rem;
+    color:#000000;
+}
+
+#menu{
+    width:40%;
+    height:auto;
+}
+
+/* ====== Hero section ====== */
+
+#hero_section{
+    width:100%;
+    height: auto;
+    color: #b585ce;
+}
+
+#hero_image_container{
+    width:100%;
+    position:relative;
+    height:670px;
+    background-image: url(https://i.imgur.com/R7VZAj5.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+#madera_label{
+    position:absolute;
+    top:45%;
+    left:0;
+    font-family: 'Prompt', sans-serif;
+    font-size:3rem;
+    width:100%;
+}
+
+#madera_label > p:nth-child(1){
+    width:20rem;
+    font-size:1.5rem;
+    background-color:#e6e8e7;
+    color:#000000;
+    display:inline-block;
+    padding: 0 1rem 0 1rem;
+}
+
+#madera_label > p:nth-child(2){
+    width:auto;
+    font-size:5rem;
+}
+
+#four_alert_container{
+    width:100%;
+    height: auto;
+    font-size:2rem;
+}
+
+.alert_container{
+    width:25%;
+    height:auto;
+    color:#000000;
+    float: left;
+    padding-bottom: 5rem;
+}
+
+.alert_container > p{
+    width:90%;
+    font-size:1.5rem;
+    float: none;
+    text-align: left;
+    display:inline-block;
+}
+
+.alert_container > p:nth-child(1){
+    font-size:2rem;
+    padding-top:1rem;
+}
+
+.alert_container > p:nth-child(2) {
+    padding: 2rem 0 1rem 0;
+}
+
+
+/* ====================
+   3.0 Colors
+   ==================== */
+
+/*
+
+#b585ce = purple
+#e6e8e7 = lightgrey
+
+*/
+
+/* ====================
+   4.0 Media Queries
+   ==================== */
+
+/* ====== Start of media queries for City of Madera city council template ====== */
+
+/* ====== Media query max-width of 1140px ====== */
+
+@media only screen and (max-width:1140px){
+    
+    #four_alert_container{
+        font-size:4rem;
+    }
+    
+    #first_last_name_container > p {
+        top: 20%;
+        line-height: 4rem;
+    }
+    
+}
+
+@media only screen and (max-width:1120px){
+    
+    #four_alert_container{
+        font-size:3rem;
+    }
+    
+    #first_last_name_container > p {
+        top: 25%;
+        line-height: 3rem;
+    }
+    
+    #mayor_story {
+        font-size: 1.5rem;
+    }
+    
+    .more_info_about_mayor {
+        font-size: 1.1rem;
+    }
+    
+}
+
+/* ====== Media query max-width of 921px, designed for Tablet size at 768px ====== */
+
+/* This header media query max width at 921px will be use for all templates */
+
+@media only screen and (max-width:921px){
+    
+    #city_of_madera_container{
+        width:25rem;
+    }
+    
+    #city_of_madera{
+        width:55%;
+    }
+    
+    #search_menu_container{
+        margin-right:1rem;
+    }
+    
+    #degree{
+        width:20%;
+        font-size:1.3rem;
+    }
+    
+}
+
+@media only screen and (max-width:850px){
+    
+    #four_alert_container{
+        font-size:2rem;
+    }
+    
+    #first_last_name_container > p {
+        top: 30%;
+        line-height: 2rem;
+    }
+    
+    #mayor_story {
+        font-size: 1.2rem;
+    }
+    
+    .more_info_about_mayor {
+        font-size: 1rem;
+    }
+    
+}
+
+/* ====== Media query for exact tablet size at 768px ======*/
+ 
+@media only screen and (max-width:768px){
+    
+    #four_alert_container{
+        height: 306px;
+    }
+    
+}
+
+/* ====== Media query max-width of 721px, designed for Phone size at 320px ====== */
+
+@media only screen and (max-width:721px){
+    
+    #search_menu_container{
+        width:3rem;
+    }
+    
+    #menu{
+        width:44%;
+        float:none;
+    }
+    
+    #menu_container{
+        display:none;
+    }
+    
+}
+
+@media only screen and (max-width:670px){
+    
+    #four_alert_container{
+        font-size:1.5rem;
+    }
+    
+    #first_last_name_container > p {
+        top: 25%;
+        line-height: 1.5rem;
+    }
+    
+    #mayor_story {
+        font-size: 1rem;
+    }
+    
+    .more_info_about_mayor {
+        font-size: .7rem;
+    }
+    
+}
+
+@media only screen and (max-width:577px){
+    
+    #mayor_story {
+    font-size: .8rem;
+}
+    
+}
+
+/* ====== Media query max-width of 529px ====== */
+
+@media only screen and (max-width:529px){
+    
+    #city_of_madera_container {
+        width: 22rem;
+    }
+    
+    #triangle{
+        width: 0;
+        height: 0;
+        float: left;
+        border-top: 56px solid #b585ce;
+        border-right: 56px solid transparent;
+    }
+    
+    #menu_bar{
+        font-size: 1.2rem;
+        height:3.5rem;
+    }
+    
+    .menu_bar_top {
+        top: 1.1rem;
+    }
+    
+    #degree{
+        top: 1.1rem;
+        font-size:1.2rem;
+    }
+    
+    #mayor_image_container {
+        width: 100%;
+        height: auto;
+    }
+    
+    #four_alert_container {
+        width: 100%;
+        position: relative;
+        top: -2px;
+    }
+    
+    .alert_container{
+        width:50%;
+        float:right;
+        height:45%;
+    }
+    
+    .alert_container > p{
+        top:0;
+        padding-top:2rem;
+        padding-bottom:2rem;
+    }
+    
+    #first_last_name_container{
+        width:50%;
+        float:left;
+    }
+    
+    #first_last_name_container > p {
+        top: 0;
+    }
+    
+    #first_last_name_container > p:nth-child(1) {
+        padding-top:2rem;
+    }
+    
+    #first_last_name_container > p:nth-child(2) {
+        padding-bottom:2rem;
+    }
+    
+    #extra_space{
+        height:2rem;
+    }
+    
+}
+
+@media only screen and (max-width:433px){
+    
+    #menu_bar{
+        font-size:1rem;
+        height:3rem;
+    }
+    
+    #city_of_madera_container{
+        width:17rem;
+    }
+    
+    #menu_bar_top{
+        top:1rem;
+    }
+    
+    #triangle{
+        border-top: 48px solid #b585ce;
+        border-right: 35px solid transparent;
+    }
+    
+    #degree{
+        font-size:1rem;
+        top: 1rem;
+        float:right;
+    }
+    
+    #degree_icon{
+        font-size:1px;
+    }
+    
+    #search_menu_container{
+        margin: 0;
+    }
+    
+    .alert_container > p{
+        padding-top:1.8rem;
+        padding-bottom: 1.8rem;
+    }
+    
+    #first_last_name_container > p:nth-child(1) {
+        padding-top:1.8rem;
+    }
+    
+    #first_last_name_container > p:nth-child(2) {
+        padding-bottom:1.8rem;
+    }
+    
+}
+
+@media only screen and (max-width:338px){
+    
+    #degree{
+        width:30%;
+    }
+    
+    #search_menu_container{
+        width:1.7rem;
+    }
+    
+    #menu{
+        width:60%;
+        float:left;
+    }
+    
+    .menu_bar_icon_container{
+        width:1.5rem;
+    }
+    
+    main{
+        font-size:.7rem;
+    }
+    
+    #four_alert_container {
+        font-size: 1.2rem;
+    }
+    
+    .alert_container > p{
+        padding-top:1.5rem;
+        padding-bottom: 1.5rem;
+    }
+    
+    #first_last_name_container > p:nth-child(1) {
+        padding-top:1.5rem;
+    }
+    
+    #first_last_name_container > p:nth-child(2) {
+        padding-bottom:1.5rem;
+    }
+    
+}
+
+@media only screen and (max-width:320px){
+    
+    #extra_space{
+        height: 1rem;
+    }    
+    
+    #about-mayor-first-and-last-name {
+        width: 100%;
+        height: 15rem;
+    }
+    
+    #right-side{
+        width:100%;
+    }
+    
+    .about_mayor_height {
+        height: 50px;
+    }
+    
+    .width_90_percent{
+        width:80%;
+        position: relative;
+        left: 10px;
+    }
+    
+    .mayor_plus{
+        display:inline-block;
+        width:20%;
+        float:right;
+        margin-top: 1rem;
+    }
+    
+}
+
+/*  ====================================================================
+    Media query for max width 317px is to hide the temperature container
+    it was breaking too much as window size gets smaller this width
+    ====================================================================*/
+
+@media only screen and (max-width:317px){
+    
+    #city_of_madera_container {
+        width: 10rem;
+    }
+    
+    #city_of_madera{
+        width:70%;
+    }
+    
+    #menu_bar{
+        font-size:.7rem;
+    }
+    
+    #degree{
+        display:none;
+    }
+    
+    #four_alert_container {
+        font-size: 1rem;
+    }
+    
+    .alert_container > p{
+        padding-top:1.5rem;
+    }
+    
+    #first_last_name_container > p{
+        line-height: 1rem;
+    }
+    
+    #first_last_name_container > p:nth-child(1) {
+        padding-top:1.5rem;
+    }
+    
+}
+
