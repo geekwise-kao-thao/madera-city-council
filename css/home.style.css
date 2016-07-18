@@ -164,7 +164,7 @@ div{
 #hero_image_container{
     width:100%;
     position:relative;
-    height:670px;
+    height:600px;
     background-image: url(https://i.imgur.com/R7VZAj5.jpg);
     background-size: cover;
     background-attachment: fixed;
@@ -173,13 +173,29 @@ div{
     overflow: hidden;
 }
 
+.falling_pedals{
+    
+    width:100%;
+    height:670px;
+    background-image:url(https://i.imgur.com/tt0tQ9J.png?1);
+    background-repeat: repeat;
+    background-size:80%;
+    background-position:top right;
+    position:absolute;
+    top: -170px;
+    right: 0px;
+    
+}
+
+
 #madera_label{
     position:absolute;
-    top:45%;
+    top:46%;
     left:0;
     font-family: 'Prompt', sans-serif;
     font-size:3rem;
     width:100%;
+    height:auto;
 }
 
 #madera_label > p:nth-child(1){
@@ -195,6 +211,19 @@ div{
     width:auto;
     font-size:5rem;
 }
+
+.sitting_sparrow{
+    width: 35%;
+    height: 1000px;
+    background-image: url(https://i.imgur.com/1AYc2o4.png);
+    background-position: left bottom;
+    background-size: 80%;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: -83px;
+    top: -240px;
+}
+
 
 #four_alert_container{
     width:100%;

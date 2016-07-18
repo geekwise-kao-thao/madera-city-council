@@ -5,6 +5,10 @@
  * will readjust its height to the height of the image for a cleaner look.
 */
 
+
+
+
+
 document.addEventListener('DOMContentLoaded',function(event){
     
     var mayor_first_last_container = document.getElementById('mayor_first_last_container');
@@ -23,6 +27,21 @@ document.addEventListener('DOMContentLoaded',function(event){
     if(document.body.offsetWidth <= 512){
         mayor_first_last_container.style.height = 'auto';
     }
+    
+        window.addEventListener('scroll',function(event){
+            
+            var window_top = this.scrollY;
+            
+            var logo_element = document.getElementById('madera_label');
+            var pedals = document.getElementById('pedals');
+            var sparrow = document.getElementById('sparrow');
+            
+            logo_element.style.transform = 'translate(0px,' + window_top /3 + '%)';
+            pedals.style.transform = 'translate(0px,' + window_top /5 + '%)';
+            sparrow.style.transform = 'translate(0px,-' + window_top /35 + '%)';
+            //sparrow.style.width = (window_top+400)/10 + '%';
+            
+        });
     
 });
 
