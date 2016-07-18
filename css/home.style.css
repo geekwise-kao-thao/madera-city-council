@@ -17,7 +17,7 @@ Table of Contents
    1.0 Global Selectors
    ==================== */
 
-html, body, main, p, h1, div, img, section{
+html, body, main, footer, p, h1, div, img, section{
     margin:0;
     padding:0;
     border:0;
@@ -30,18 +30,21 @@ body{
     width:100%;
     height:auto;
 }
-/*
-main {
-    position: relative;
-    top: -2px;
+
+footer{
+    width: 100%;
+    height:12rem;
+    font-size: 1rem;
 }
-*/
+
 a{
     text-decoration: none;
+    color: #b585ce;
 }
 
 div{
-    display: inline-block
+    display: inline-block;
+    width:100%;
 }
 
 .uppercase{
@@ -60,6 +63,10 @@ div{
     float:left;
 }
 
+.text_align_center{
+    text-align: center;
+}
+
 .text_align_left{
     text-align: left;
 }
@@ -70,6 +77,18 @@ div{
 
 .color_purple{
     color:#b585ce;
+}
+
+.color_white{
+    color:#ffffff;
+}
+
+.color_darkgrey{
+    color:#4e4d4d;
+}
+
+.color_black{
+    color:#000000;
 }
 
 .background_color_lightgrey{
@@ -173,8 +192,15 @@ div{
     overflow: hidden;
 }
 
-.falling_pedals{
+#hero_chevron_down{
     
+}
+
+/* Displaying foreground image of pedals as NONE.  May be used later */
+
+
+.falling_pedals{
+    display:none;
     width:100%;
     height:670px;
     background-image:url(https://i.imgur.com/tt0tQ9J.png?1);
@@ -190,8 +216,8 @@ div{
 
 #madera_label{
     position:absolute;
-    top:46%;
-    left:0;
+    top: 42%;
+    left: 14px;
     font-family: 'Prompt', sans-serif;
     font-size:3rem;
     width:100%;
@@ -212,7 +238,10 @@ div{
     font-size:5rem;
 }
 
+/* Displaying foreground image of sparrow as NONE.  May be used later */
+
 .sitting_sparrow{
+    display:none;
     width: 35%;
     height: 1000px;
     background-image: url(https://i.imgur.com/1AYc2o4.png);
@@ -259,10 +288,58 @@ div{
 /* Divider separating hero image and alert from upcoming events */
 
 #divider{
-    height: 10rem;
+    height: 4rem;
     width:100%;
-    background-color:yellow;
+    background-color: #b585ce;
 }
+
+
+/* Footer section */
+
+.footer_containers{
+    height:100%;
+    float:left;
+    width:calc(100%/3);
+    padding-top:2rem;
+}
+
+.footer_containers > a > p{
+    width:90%;
+    display: inline-block;
+    text-align:left; 
+}
+
+#logo_address_container{
+    text-align: center;
+    width:90%;
+}
+
+#image_logo{
+    width:23%;
+    float:left;
+    text-align: left;
+    padding-top: .5rem;
+}
+
+#footer_address{
+    width:60%;
+    float:left;
+    text-align: left;
+    padding-left: 2.5rem;
+}
+
+#connect_container{
+    width:90%;
+    
+}
+
+.fontawesome_containers{
+    width:1.5rem;
+    border-radius: 50%;
+    margin:0 1rem 0 1rem;
+    background-color:#b585ce;
+}
+
 
 /* ====================
    3.0 Colors
@@ -272,6 +349,7 @@ div{
 
 #b585ce = purple
 #e6e8e7 = lightgrey
+#4e4d4d = darkgrey
 
 */
 

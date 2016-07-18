@@ -5,6 +5,7 @@
         
         <meta charset="utf-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
         <link href='https://fonts.googleapis.com/css?family=Prompt:400,800' rel='stylesheet' type='text/css'>
         <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
         <link href='https://fonts.googleapis.com/css?family=Lobster|Ubuntu' rel='stylesheet' type='text/css'>
@@ -78,6 +79,8 @@
                 
                 <div id='hero_image_container' class='float_left'>
                     
+                    <!-- Background image display as none, may be use later -->
+                    
                     <div class='falling_pedals' id='pedals'> <!-- Falling leave pedals --> </div>
                     
                     <div id='madera_label'>
@@ -87,7 +90,18 @@
                         <p class='uppercase'>
                             madera
                         </p>
+                        
+                        <!-- Chevron fontawesome -->
+                        
+                        <div id='hero_chevron_down'>
+                            <a href='#'>
+                                <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                        
                     </div>
+                    
+                     <!-- Background image display as none, may be use later -->
                     
                     <div class='sitting_sparrow' id='sparrow'></div>
                     
@@ -161,7 +175,103 @@
             
         </main>
         
-        <!-- Footer section to be completed by another team member -->
-
+    <!-- ============================================================================================================
+         Footer includes:  Logo image and links to different pages or sections
+         ============================================================================================================ -->
+        
+        <footer class='font_prompt'>
+            <div class='footer_containers text_align_center'>
+                <a href='#'>
+                    <p class='uppercase color_purple'>
+                        site map
+                    </p>
+                </a>
+                <a href='#'>
+                    <p class='uppercase color_darkgrey'>
+                        residents
+                    </p>
+                </a>
+                <a href='#'>
+                    <p class='uppercase color_darkgrey'>
+                        visitors
+                    </p>
+                </a>
+                <a href='#'>
+                    <p class='uppercase color_darkgrey'>
+                        business
+                    </p>
+                </a>
+                <a href='#'>
+                    <p class='uppercase color_darkgrey'>
+                        government
+                    </p>
+                </a>
+            </div>
+            <div class='footer_containers text_align_center'>
+                <div class='text_align_center' id='logo_address_container'>
+                    <div id='image_logo'>
+                        <a>
+                            <img src='https://i.imgur.com/1pDVrn0.png'>
+                        </a>
+                    </div>
+                    <div id='footer_address' class='text_align_left'>
+                        <div>
+                            <a href='#'>
+                                <p class='uppercase color_purple'>
+                                    city of madera
+                                </p>
+                            </a>
+                            <a href='#'>
+                                <p class='uppercase color_darkgrey'>
+                                    madera city hall
+                                </p>
+                            </a>
+                            <a href='#'>
+                                <p class='uppercase color_darkgrey'>
+                                    703 sherwood way
+                                </p>
+                            </a>
+                            <a href='#'>
+                                <p class='uppercase color_darkgrey'>
+                                    madera&comma; ca 93638
+                                </p>
+                            </a>
+                            <a href='#'>
+                                <p class='uppercase color_darkgrey'>
+                                    &lpar;559&rpar; 674&dash;8412
+                                </p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class='footer_containers text_align_center'>
+                <div id='connect_container'>
+                    <a href='#'>
+                        <p class='uppercase color_purple'>
+                            connect with the city
+                        </p>
+                    </a>
+                </div>
+                
+                <div>
+                    <div class='fontawesome_containers'>
+                        <a href='#'>
+                            <p class='color_black'>
+                                <i class="fa fa-facebook" aria-hidden="true"></i>
+                            </p>
+                        </a>
+                    </div>
+                    <div class='fontawesome_containers'>
+                        <a href='#'>
+                            <p class='color_black'>
+                                <i class="fa fa-twitter" aria-hidden="true"></i>
+                            </p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+            
     </body>
 </html>

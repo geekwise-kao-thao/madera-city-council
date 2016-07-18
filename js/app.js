@@ -36,11 +36,11 @@ document.addEventListener('DOMContentLoaded',function(event){
             var pedals = document.getElementById('pedals');
             var sparrow = document.getElementById('sparrow');
             
-            logo_element.style.transform = 'translate(0px,' + window_top /3 + '%)';
+            logo_element.style.transform = 'translate(0px,' + window_top /6 + '%)';
+            /*
             pedals.style.transform = 'translate(0px,' + window_top /5 + '%)';
             sparrow.style.transform = 'translate(0px,-' + window_top /35 + '%)';
-            //sparrow.style.width = (window_top+400)/10 + '%';
-            
+            */
         });
     
 });
