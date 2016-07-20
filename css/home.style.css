@@ -172,6 +172,11 @@ div{
 
 /* Start of second menu section */
 
+@font-face {
+    font-family: 'bold';
+    src: url('../fonts/bold.woff2');
+}
+
 #second_menu_container{
     width:100%;
     position:relative;
@@ -195,6 +200,7 @@ div{
 }
 
 .main_menu_item{
+    font-family: 'bold';
     width:25%;
     height:100%;
     float:left;
