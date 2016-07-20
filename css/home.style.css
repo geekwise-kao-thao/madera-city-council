@@ -27,7 +27,7 @@ html, body, main, footer, p, h1, div, img, section{
 body{
     text-align:center;
     box-sizing: border-box;
-    font-size:62.5%;
+    font-size:0%;
     width:100%;
     height:auto;
 }
@@ -303,53 +303,41 @@ div{
     background-color: #b585ce;
 }
 
-
 /* Footer section */
 
+#social_media_container{
+    margin-top:1rem;
+}
+
 .footer_containers{
-    height:100%;
-    float:left;
-    width:calc(100%/3);
-    padding-top:2rem;
-}
-
-.footer_containers > a > p{
-    width:90%;
-    display: inline-block;
-    text-align:left; 
-}
-
-#logo_address_container{
-    text-align: center;
-    width:90%;
-}
-
-#image_logo{
-    width:23%;
-    float:left;
-    text-align: left;
-    padding-top: .5rem;
-}
-
-#footer_address{
-    width:60%;
-    float:left;
-    text-align: left;
-    padding-left: 2.5rem;
-}
-
-#connect_container{
-    width:90%;
-    
+    width:27%;
+    margin: 1.2rem 0 1.5rem 0;
+    font-family: light;
+    letter-spacing: 3px;
 }
 
 .fontawesome_containers{
-    width:1.5rem;
-    border-radius: 50%;
-    margin:0 1rem 0 1rem;
-    background-color:#b585ce;
+    width:50%;
+    float: left;
+    position: relative;
+    top: 8px;
 }
 
+#facebook_icon{
+    font-size:2rem;
+    position: relative;
+    top: 5px;
+}
+
+#twitter_icon{
+    font-size: 2rem;
+    position: relative;
+    top: 5px;
+}
+
+#footer_hr{
+    color:#b585ce;
+}
 
 /* ====================
    4.0 Colors
