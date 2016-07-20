@@ -153,6 +153,12 @@ div{
     width: 5rem;
 }
 
+#hamburger_anchor{
+    position:relative;
+    top:30px;
+    left:10px;
+}
+
 #hashtag_icon{
     font-size:35px;
     position: relative;
@@ -204,7 +210,8 @@ div{
 
 .temperature_position{
     position: relative;
-    top:20px;
+    top: 30px;
+    right: -5px;
 }
 
 /* Start of second menu section */
