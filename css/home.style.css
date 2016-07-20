@@ -213,7 +213,7 @@ div{
     width:100%;
     position:relative;
     height:600px;
-    background-image: url(https://i.imgur.com/R7VZAj5.jpg);
+    background-image: url(../images/background-image.png);
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
