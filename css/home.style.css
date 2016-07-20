@@ -26,7 +26,7 @@ html, body, main, footer, p, h1, div, img, section{
 body{
     text-align:center;
     box-sizing: border-box;
-    font-size:0%;
+    font-size:62.5%;
     width:100%;
     height:auto;
 }
@@ -107,9 +107,9 @@ div{
 
 #menu_bar{
     width:100%;
-    height:5rem;
-    font-size:1.5rem;
-    background-color:#b585ce;
+    height:6rem;
+    font-size:2.5rem;
+    background-color:#beaac5;
     font-family: sans-serif;
     position: fixed;
     top: 0;
@@ -131,7 +131,7 @@ div{
 }
 
 #title_icon_container{
-    width:30%;
+    width:44%;
     color:#ffffff;
     height: 100%;
 }
@@ -139,13 +139,13 @@ div{
 #title_icon_container > div:nth-child(1){
     width:60%;
     position: relative;
-    top: -8px;
+    top: -24px;
 }
 
 #title_icon_container > div:nth-child(2){
-    width:14%;
+    width: 15%;
     position: relative;
-    top: 10px;
+    top: 4px;
 }
 
 #seal{
@@ -171,26 +171,9 @@ div{
     top:20px;
 }
 
-.menu_bar_icon_container{
-    height:2.5rem;
-    width:2.5rem;
-    color:#000000;
-}
+/* Start of second menu section */
 
-#menu{
-    width:40%;
-    height:auto;
-}
-
-/* ====== Hero section ====== */
-
-#hero_section{
-    width:100%;
-    height: auto;
-    color: #b585ce;
-}
-
-#hero_image_container{
+#second_menu_container{
     width:100%;
     position:relative;
     height:600px;
@@ -202,63 +185,38 @@ div{
     overflow: hidden;
 }
 
-/* Displaying foreground image of pedals as NONE.  May be used later */
+#second_menu{
+    width: 100%;
+    height: 5rem;
+    position: fixed;
+    top: 6rem;
+    left:0;
+    background-color: #beaac5;
+    font-size: 1.2rem;
+}
 
+.main_menu_item{
+    width:25%;
+    height:100%;
+    float:left;
+    background-color: #ffffff;
+}
 
-.falling_pedals{
-    display:none;
+.main_menu_item:hover{
+    background-color: #e6e8e7;
+    height:95%;
+}
+
+.display_on_hover{
     width:100%;
-    height:670px;
-    background-image:url(https://i.imgur.com/tt0tQ9J.png?1);
-    background-repeat: repeat;
-    background-size:80%;
-    background-position:top right;
-    position:absolute;
-    top: -170px;
-    right: 0px;
-    
+    height:5px;
+    position:relative;
+    bottom:-46px;
+    background-color: #beaac5;
+    display: none;
 }
 
-
-#madera_label{
-    position:absolute;
-    top: 42%;
-    left: 14px;
-    font-family: 'Prompt', sans-serif;
-    font-size:3rem;
-    width:100%;
-    height:auto;
-}
-
-#madera_label > p:nth-child(1){
-    width:20rem;
-    font-size:1.5rem;
-    background-color:#e6e8e7;
-    color:#000000;
-    display:inline-block;
-    padding: 0 1rem 0 1rem;
-}
-
-#madera_label > p:nth-child(2){
-    width:auto;
-    font-size:5rem;
-}
-
-/* Displaying foreground image of sparrow as NONE.  May be used later */
-
-.sitting_sparrow{
-    display:none;
-    width: 35%;
-    height: 1000px;
-    background-image: url(https://i.imgur.com/1AYc2o4.png);
-    background-position: left bottom;
-    background-size: 80%;
-    background-repeat: no-repeat;
-    position: absolute;
-    left: -83px;
-    top: -240px;
-}
-
+/* Start of Alert section*/
 
 #four_alert_container{
     width:100%;
@@ -353,6 +311,7 @@ div{
 
 /*
 
+#beaac5 = light purple
 #b585ce = purple
 #e6e8e7 = lightgrey
 #4e4d4d = darkgrey
@@ -456,11 +415,6 @@ div{
         width:3rem;
     }
     
-    #menu{
-        width:44%;
-        float:none;
-    }
-    
 }
 
 @media only screen and (max-width:670px){
@@ -562,10 +516,6 @@ div{
         width:17rem;
     }
     
-    #menu_bar_top{
-        top:1rem;
-    }
-    
     #temperature{
         margin: 0;
     }
@@ -589,15 +539,6 @@ div{
     
     #temperature{
         width:1.7rem;
-    }
-    
-    #menu{
-        width:60%;
-        float:left;
-    }
-    
-    .menu_bar_icon_container{
-        width:1.5rem;
     }
     
     main{

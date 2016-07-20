@@ -28,20 +28,21 @@ document.addEventListener('DOMContentLoaded',function(event){
         mayor_first_last_container.style.height = 'auto';
     }
     
-        window.addEventListener('scroll',function(event){
-            
-            var window_top = this.scrollY;
-            
-            var logo_element = document.getElementById('madera_label');
-            var pedals = document.getElementById('pedals');
-            var sparrow = document.getElementById('sparrow');
-            
-            logo_element.style.transform = 'translate(0px,' + window_top /6 + '%)';
-            /*
-            pedals.style.transform = 'translate(0px,' + window_top /5 + '%)';
-            sparrow.style.transform = 'translate(0px,-' + window_top /35 + '%)';
-            */
-        });
+    window.addEventListener('scroll',function(event){
+        /*
+        var window_top = this.scrollY;*/
+        
+        var menu_bar = document.getElementById('menu_bar');
+        menu_bar.style.backgroundColor = '#c39dd3';
+        
+    });
+    /*
+    var second_menu_items = document.getElementById('second_menu').children;
+    var purple_line = document.getElementsByClassName('display_on_hover');
+    
+    second_menu_items.addEventListener('mouseover',function(){
+        purple_line.style.display = 'inline-block';
+    });*/
     
 });
 
