@@ -63,6 +63,10 @@ div{
     float:left;
 }
 
+.float_none{
+    float:none;
+}
+
 .text_align_center{
     text-align: center;
 }
@@ -124,6 +128,28 @@ div{
     top:23px;
     color:#ffffff;
     
+}
+
+#title_icon_container{
+    width:30%;
+    color:#ffffff;
+    height: 100%;
+}
+
+#title_icon_container > div:nth-child(1){
+    width:60%;
+    position: relative;
+    top: -8px;
+}
+
+#title_icon_container > div:nth-child(2){
+    width:14%;
+    position: relative;
+    top: 10px;
+}
+
+#seal{
+    width:100%;
 }
 
 #temperature{
