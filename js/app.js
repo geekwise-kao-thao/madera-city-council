@@ -33,7 +33,14 @@ document.addEventListener('DOMContentLoaded',function(event){
         var window_top = this.scrollY;*/
         
         var menu_bar = document.getElementById('menu_bar');
-        menu_bar.style.backgroundColor = '#c39dd3';
+        var light_seal = document.getElementById('light_seal');
+        var bold_seal = document.getElementById('bold_seal');
+        
+        menu_bar.style.backgroundColor = '#b585ce';
+        light_seal.style.display = 'none';
+        bold_seal.style.display = 'inline-block';
+        
+        
         
     });
     /*

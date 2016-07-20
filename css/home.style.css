@@ -4,9 +4,10 @@ Madera City Council | Page Title CSS
 Table of Contents
 
 1.0  Global Selectors
-2.0  HTML Element Id's and Classes
-3.0  Colors
-4.0  Media Queries
+2.0  Font Family
+3.0  HTML Element Id's and Classes
+4.0  Colors
+5.0  Media Queries
 */
 
 /* Import url for fontawesome to work */
@@ -99,7 +100,38 @@ div{
 }
 
 /* =================================
-   2.0 HTML Element Id's and Classes
+   2.0 Font Family
+   ================================= */
+
+@font-face {
+    font-family: 'bold';
+    src: url('../fonts/bold.woff2');
+}
+
+@font-face {
+    font-family: 'light-bold';
+    src: url('../fonts/light-bold.woff2');
+}
+
+@font-face {
+    font-family: 'light';
+    src: url('../fonts/light.woff2');
+}
+
+@font-face {
+    font-family: 'normal';
+    src: url('../fonts/normal.woff2');
+}
+
+@font-face {
+    font-family: 'thin';
+    src: url('../fonts/thin.woff2');
+}
+
+
+
+/* =================================
+   3.0 HTML Element Id's and Classes
    ================================= */
    
 /* ====== Header navigation menu bar ====== */
@@ -108,7 +140,7 @@ div{
     width:100%;
     height:6rem;
     font-size:2.5rem;
-    background-color:#beaac5;
+    background-color:#af97bb;
     font-family: sans-serif;
     position: fixed;
     top: 0;
@@ -147,8 +179,13 @@ div{
     top: 4px;
 }
 
-#seal{
+#light_seal{
     width:100%;
+}
+
+#bold_seal{
+    width:100%;
+    display: none;
 }
 
 #temperature{
@@ -171,11 +208,6 @@ div{
 }
 
 /* Start of second menu section */
-
-@font-face {
-    font-family: 'bold';
-    src: url('../fonts/bold.woff2');
-}
 
 #second_menu_container{
     width:100%;
@@ -211,6 +243,14 @@ div{
 .main_menu_item:hover{
     background-color: #e6e8e7;
     height:95%;
+}
+
+.main_menu_item > a{
+    color:#000000;
+}
+
+.main_menu_item > a > p > i{
+    font-size:3rem;
 }
 
 .display_on_hover{
@@ -312,12 +352,13 @@ div{
 
 
 /* ====================
-   3.0 Colors
+   4.0 Colors
    ==================== */
 
 /*
 
-#beaac5 = light purple
+#af97bb = light purple
+#b585ce = bold purple
 #b585ce = purple
 #e6e8e7 = lightgrey
 #4e4d4d = darkgrey
@@ -325,7 +366,7 @@ div{
 */
 
 /* ====================
-   4.0 Media Queries
+   5.0 Media Queries
    ==================== */
 
 /* ====== Start of media queries for City of Madera city council template ====== */
