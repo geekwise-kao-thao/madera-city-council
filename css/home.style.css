@@ -198,12 +198,13 @@ div{
 }
 
 #title_icon_container{
-    width:34%;
+    width:30%;
     color:#ffffff;
     height: 100%;
     position:relative;
     overflow: hidden;
     white-space: nowrap;
+    padding-left: 37px;
 }
 
 #city_of_madera_label{
@@ -211,18 +212,14 @@ div{
     position: absolute;
     top: 27%;
     left:0px;
-    /* padding left to 200px will hide the label */
 }
 
 #madera_icon_container{
-    width: 19.5%;
+    width: 22%;
     position: relative;
     top: 3%;
-    left:181px;
-    
-    transition: .5s;
+    left:158px;
     z-index: 2;
-    /*padding-right:365px;*/
 }
 
 #light_seal{

@@ -55,7 +55,7 @@ document.addEventListener('DOMContentLoaded',function(event){
     
     city_of_madera_label.style.backgroundColor = '#b585ce';
     madera_icon_container.style.backgroundColor = '#b585ce';
-    city_of_madera_label.style.transform = 'translate(' + window_top /1.05 + '%, 0px)';  
+    city_of_madera_label.style.transform = 'translate(' + window_top /.7 + '%, 0px)';  
     madera_icon_container.style.paddingRight = '' + window_top/.15 + 'px' ;
     
     // end of tes for hide feature
@@ -78,7 +78,8 @@ document.addEventListener('DOMContentLoaded',function(event){
         if(hero_text_container.getBoundingClientRect().top <= 192){
             menu_bar.style.height = '4.5rem';
             hamburger_anchor.style.top = '18px';
-            madera_icon_container.style.width = '15%';
+            title_icon_container.style.paddingLeft = '70px';
+            madera_icon_container.style.width = '17%';
             temperature.style.top = '18px';
             residents_item.style.display = 'none';
             visitors_item.style.display = 'none';
@@ -91,7 +92,8 @@ document.addEventListener('DOMContentLoaded',function(event){
         if(hero_text_container.getBoundingClientRect().top > 192){
             menu_bar.style.height = '6rem';
             hamburger_anchor.style.top = '30px';
-            madera_icon_container.style.width = '19.5%';
+            title_icon_container.style.paddingLeft = '37px';
+            madera_icon_container.style.width = '22%';
             temperature.style.top = '30px';
             residents_item.style.display = 'inline-block';
             visitors_item.style.display = 'inline-block';
