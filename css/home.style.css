@@ -370,6 +370,9 @@ div{
 
 #footer_hr{
     color:#b585ce;
+    height: 1px;
+    width:80%;
+    background-color: #b585ce;
 }
 
 /* ====================
