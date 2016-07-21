@@ -46,10 +46,10 @@
             <!--=== City of Madera title and icon ===-->
             
             <div id='title_icon_container' class='float_none'>
-                <div>
+                <div id='city_of_madera_label'>
                     city of madera
                 </div>
-                <div>
+                <div id='madera_icon_container'>
                     <img src='./images/light-purple-100x100.png' id='light_seal'>
                     <img src='./images/bold-purple-100x100.png' id='bold_seal'>
                 </div>
@@ -57,8 +57,8 @@
             
             <!--=== Temperature ===-->
             
-            <div class='float_right' id='temperature'>
-                <div class='temperature_position'>
+            <div class='float_right' id='temperature_container'>
+                <div class='temperature_position' id='temperature'>
                     <span>70</span>
                     <i class="fa fa-circle-thin" aria-hidden="true" id='degree_circle'></i>
                 </div>
@@ -71,8 +71,6 @@
          ================================================================================================================== -->
         
         <div id='second_menu_container'>
-            
-            <div id='extra_margin_container'>
             
                 <div id='second_menu' class='font_prompt uppercase'>
                     
@@ -99,7 +97,7 @@
                                 <img src='./images/visitors.png'>
                             </a>
                         </p>
-                        <p>
+                        <p id='visitors_item'>
                             <a href='./visitors/index.html' class='color_black'>
                                 visitors
                             </a>
@@ -129,7 +127,7 @@
                                 <img src='./images/government.png'>
                             </a>
                         </p>
-                        <p>
+                        <p id='government_item'>
                             <a href='./government/index.html' class='color_black'>
                                 government
                             </a>
@@ -138,6 +136,25 @@
                     
                 </div>
                 
+            </div>
+        
+        <div id='hero_image_container'>
+            
+            <!-- Hero text -->
+            
+            <div id='hero_text_container'>
+                <div id='hero_text'>
+                    <p class='capitalize light-bold'>
+                        the city of madera <span class='text_transform_none'>is located in </span>california's san joaquin valley
+                    </p>
+                </div>
+                <div>
+                    <a href='#'>
+                        <p id='learn_button' class='uppercase light'>
+                            learn about madera
+                        </p>
+                    </a>
+                </div>
             </div>
             
         </div>

@@ -28,6 +28,20 @@ document.addEventListener('DOMContentLoaded',function(event){
         mayor_first_last_container.style.height = 'auto';
     }
     
+    /* on scroll event handler */
+    
+    var menu_bar = document.getElementById('menu_bar');
+    var hamburger_anchor = document.getElementById('hamburger_anchor');
+    var title_icon_container = document.getElementById('title_icon_container');
+    var madera_icon_container = document.getElementById('madera_icon_container');
+    var temperature = document.getElementById('temperature');
+    var second_menu_container = document.getElementById('second_menu_container');
+    var residents_item = document.getElementById('residents_item');
+    var visitors_item = document.getElementById('visitors_item');
+    var business_item = document.getElementById('business_item');
+    var government_item = document.getElementById('government_item');
+    var hero_text_container = document.getElementById('hero_text_container');
+    
     window.addEventListener('scroll',function(event){
         /*
         var window_top = this.scrollY;*/
@@ -40,16 +54,43 @@ document.addEventListener('DOMContentLoaded',function(event){
         light_seal.style.display = 'none';
         bold_seal.style.display = 'inline-block';
         
+        // menu bars height change
         
+        console.log(hero_text_container.getBoundingClientRect().top)
+    
+        if(hero_text_container.getBoundingClientRect().top <= 192){
+            menu_bar.style.height = '4.5rem';
+            hamburger_anchor.style.top = '18px';
+            madera_icon_container.style.width = '11.5%';
+            temperature.style.top = '18px';
+            residents_item.style.display = 'none';
+            visitors_item.style.display = 'none';
+            business_item.style.display = 'none';
+            government_item.style.display = 'none';
+            second_menu_container.style.height = '4.5rem';
+            second_menu_container.style.top = '4.5rem';
+        };
+        
+        if(hero_text_container.getBoundingClientRect().top > 192){
+            menu_bar.style.height = '6rem';
+            hamburger_anchor.style.top = '30px';
+            madera_icon_container.style.width = '15%';
+            temperature.style.top = '30px';
+            residents_item.style.display = 'inline-block';
+            visitors_item.style.display = 'inline-block';
+            business_item.style.display = 'inline-block';
+            government_item.style.display = 'inline-block';
+            second_menu_container.style.height = '6rem';
+            second_menu_container.style.top = '6rem';
+        };
         
     });
-    /*
-    var second_menu_items = document.getElementById('second_menu').children;
-    var purple_line = document.getElementsByClassName('display_on_hover');
     
-    second_menu_items.addEventListener('mouseover',function(){
-        purple_line.style.display = 'inline-block';
-    });*/
+    
+    
+    
+    
+    
     
 });
 
