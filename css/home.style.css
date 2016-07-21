@@ -12,7 +12,6 @@ Table of Contents
 
 /* Import url for fontawesome to work */
 
-@import url("//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css");
 
 /* ====================
    1.0 Global Selectors
@@ -175,7 +174,7 @@ div{
     top: 0;
     z-index: 1;
     left: 0;
-    transition:1s;
+    transition:.5s;
 }
 
 #hashtag_container{
@@ -187,7 +186,7 @@ div{
     position:relative;
     top:30px;
     left:10px;
-    transition: 1s;
+    transition: .5s;
 }
 
 #hashtag_icon{
@@ -199,22 +198,31 @@ div{
 }
 
 #title_icon_container{
-    width:44%;
+    width:34%;
     color:#ffffff;
     height: 100%;
+    position:relative;
+    overflow: hidden;
+    white-space: nowrap;
 }
 
 #city_of_madera_label{
     width:60%;
-    position: relative;
-    top: -27%;
+    position: absolute;
+    top: 27%;
+    left:0px;
+    /* padding left to 200px will hide the label */
 }
 
 #madera_icon_container{
-    width: 15%;
+    width: 19.5%;
     position: relative;
     top: 3%;
-    transition: 1s;
+    left:181px;
+    
+    transition: .5s;
+    z-index: 2;
+    /*padding-right:365px;*/
 }
 
 #light_seal{
@@ -241,7 +249,7 @@ div{
 }
 
 #temperature{
-    transition: 1s;
+    transition: .5s;
 }
 
 .temperature_position{
@@ -302,23 +310,33 @@ div{
     font-size:3rem;
 }
 
+#residents_p_tag{
+    position:relative;
+    top:15px;
+}
+
+#fa_residents{
+    font-size:25px;
+}
+
 #residents_item{
     position:relative;
-    top:31px;
-    transition: 1s;
+    top:18px;
+    transition: .5s;
 }
 
 #visitors_item{
-    transition: 1s;
+    transition: .5s;
 }
 
 #business_item{
     position:relative;
-    top:28px;
+    top:24px;
+    transition: .5s;
 }
 
 #government_item{
-    transition: 1s;
+    transition: .5s;
 }
 
 .display_on_hover{

@@ -11,6 +11,8 @@
 
 document.addEventListener('DOMContentLoaded',function(event){
     
+    
+    
     var mayor_first_last_container = document.getElementById('mayor_first_last_container');
     var the_mayor_picture = document.getElementById('the_mayor_picture');
     
@@ -33,6 +35,7 @@ document.addEventListener('DOMContentLoaded',function(event){
     var menu_bar = document.getElementById('menu_bar');
     var hamburger_anchor = document.getElementById('hamburger_anchor');
     var title_icon_container = document.getElementById('title_icon_container');
+    var city_of_madera_label = document.getElementById('city_of_madera_label');
     var madera_icon_container = document.getElementById('madera_icon_container');
     var temperature = document.getElementById('temperature');
     var second_menu_container = document.getElementById('second_menu_container');
@@ -43,6 +46,20 @@ document.addEventListener('DOMContentLoaded',function(event){
     var hero_text_container = document.getElementById('hero_text_container');
     
     window.addEventListener('scroll',function(event){
+        
+        
+        // testing out city of madera label hide feature
+    
+    var window_top = this.scrollY;
+    console.log(window_top); /*272*/
+    
+    city_of_madera_label.style.backgroundColor = '#b585ce';
+    madera_icon_container.style.backgroundColor = '#b585ce';
+    city_of_madera_label.style.transform = 'translate(' + window_top /1.05 + '%, 0px)';  
+    madera_icon_container.style.paddingRight = '' + window_top/.15 + 'px' ;
+    
+    // end of tes for hide feature
+        
         /*
         var window_top = this.scrollY;*/
         
@@ -61,7 +78,7 @@ document.addEventListener('DOMContentLoaded',function(event){
         if(hero_text_container.getBoundingClientRect().top <= 192){
             menu_bar.style.height = '4.5rem';
             hamburger_anchor.style.top = '18px';
-            madera_icon_container.style.width = '11.5%';
+            madera_icon_container.style.width = '15%';
             temperature.style.top = '18px';
             residents_item.style.display = 'none';
             visitors_item.style.display = 'none';
@@ -74,7 +91,7 @@ document.addEventListener('DOMContentLoaded',function(event){
         if(hero_text_container.getBoundingClientRect().top > 192){
             menu_bar.style.height = '6rem';
             hamburger_anchor.style.top = '30px';
-            madera_icon_container.style.width = '15%';
+            madera_icon_container.style.width = '19.5%';
             temperature.style.top = '30px';
             residents_item.style.display = 'inline-block';
             visitors_item.style.display = 'inline-block';
