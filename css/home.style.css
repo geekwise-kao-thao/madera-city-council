@@ -187,6 +187,7 @@ div{
     position:relative;
     top:30px;
     left:10px;
+    transition: 1s;
 }
 
 #hashtag_icon{
@@ -213,6 +214,7 @@ div{
     width: 15%;
     position: relative;
     top: 3%;
+    transition: 1s;
 }
 
 #light_seal{
@@ -236,6 +238,10 @@ div{
     position:relative;
     top: -20px;
     left: -6px;
+}
+
+#temperature{
+    transition: 1s;
 }
 
 .temperature_position{
@@ -299,11 +305,20 @@ div{
 #residents_item{
     position:relative;
     top:31px;
+    transition: 1s;
+}
+
+#visitors_item{
+    transition: 1s;
 }
 
 #business_item{
     position:relative;
     top:28px;
+}
+
+#government_item{
+    transition: 1s;
 }
 
 .display_on_hover{
