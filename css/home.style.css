@@ -91,12 +91,12 @@ div{
     color:#b585ce;
 }
 
-.color_white{
-    color:#ffffff;
+.color_darkgrey{
+    color:#666666;
 }
 
-.color_darkgrey{
-    color:#4e4d4d;
+.color_white{
+    color:#ffffff;
 }
 
 .color_black{
@@ -280,13 +280,13 @@ div{
     width:25%;
     height:100%;
     float:left;
-    color:#000000;
     background-color: #ffffff;
 }
 
 .main_menu_item:hover{
     background-color: #e6e8e7;
     height:95%;
+    color:#000000;
 }
 
 .main_menu_item > p{
@@ -299,20 +299,12 @@ div{
     top:25px;
 }
 
-.main_menu_item > a{
-    color:#000000;
-}
-
-.main_menu_item > a > p > i{
-    font-size:3rem;
-}
-
 #residents_p_tag{
     position:relative;
     top:15px;
 }
 
-#fa_residents{
+#fontawesome_1{
     font-size:25px;
 }
 
@@ -394,38 +386,6 @@ div{
 }
 
 /* Start of Alert section*/
-
-#four_alert_container{
-    width:100%;
-    height: auto;
-    font-size:2rem;
-}
-
-.alert_container{
-    width:25%;
-    height:auto;
-    color:#000000;
-    float: left;
-    padding-bottom: 5rem;
-}
-
-.alert_container > p{
-    width:90%;
-    font-size:1.5rem;
-    float: none;
-    text-align: left;
-    display:inline-block;
-}
-
-.alert_container > p:nth-child(1){
-    font-size:2rem;
-    padding-top:1rem;
-}
-
-.alert_container > p:nth-child(2) {
-    padding: 2rem 0 1rem 0;
-}
-
 /* Divider separating hero image and alert from upcoming events */
 
 #divider{
@@ -497,9 +457,6 @@ div{
 
 @media only screen and (max-width:1140px){
     
-    #four_alert_container{
-        font-size:4rem;
-    }
     
     #first_last_name_container > p {
         top: 20%;
@@ -510,9 +467,6 @@ div{
 
 @media only screen and (max-width:1120px){
     
-    #four_alert_container{
-        font-size:3rem;
-    }
     
     #first_last_name_container > p {
         top: 25%;
@@ -547,9 +501,6 @@ div{
 
 @media only screen and (max-width:850px){
     
-    #four_alert_container{
-        font-size:2rem;
-    }
     
     #first_last_name_container > p {
         top: 30%;
@@ -570,9 +521,6 @@ div{
  
 @media only screen and (max-width:768px){
     
-    #four_alert_container{
-        height: 306px;
-    }
     
 }
 
@@ -588,9 +536,7 @@ div{
 
 @media only screen and (max-width:670px){
     
-    #four_alert_container{
-        font-size:1.5rem;
-    }
+    
     
     #first_last_name_container > p {
         top: 25%;
@@ -633,23 +579,6 @@ div{
         height: auto;
     }
     
-    #four_alert_container {
-        width: 100%;
-        position: relative;
-        top: -2px;
-    }
-    
-    .alert_container{
-        width:50%;
-        float:right;
-        height:45%;
-    }
-    
-    .alert_container > p{
-        top:0;
-        padding-top:2rem;
-        padding-bottom:2rem;
-    }
     
     #first_last_name_container{
         width:50%;
@@ -689,11 +618,6 @@ div{
         margin: 0;
     }
     
-    .alert_container > p{
-        padding-top:1.8rem;
-        padding-bottom: 1.8rem;
-    }
-    
     #first_last_name_container > p:nth-child(1) {
         padding-top:1.8rem;
     }
@@ -712,15 +636,6 @@ div{
     
     main{
         font-size:.7rem;
-    }
-    
-    #four_alert_container {
-        font-size: 1.2rem;
-    }
-    
-    .alert_container > p{
-        padding-top:1.5rem;
-        padding-bottom: 1.5rem;
     }
     
     #first_last_name_container > p:nth-child(1) {
@@ -782,13 +697,7 @@ div{
         font-size:.7rem;
     }
     
-    #four_alert_container {
-        font-size: 1rem;
-    }
     
-    .alert_container > p{
-        padding-top:1.5rem;
-    }
     
     #first_last_name_container > p{
         line-height: 1rem;
