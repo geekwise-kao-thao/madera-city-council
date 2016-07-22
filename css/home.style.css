@@ -412,6 +412,47 @@ div{
     width: 50%;
 }
 
+/* Arrow buttons */
+
+#arrow_buttons_container{
+    width: 150px;
+    height: 50px;
+    position: relative;
+    left: 358px;
+    top: -10px;
+}
+
+.arrow_buttons{
+    border:2px solid #ffffff;
+    color:#ffffff;
+    width: 30%;
+    height: 90%;
+    float:left;
+    border-radius:100%;
+    transition-duration:.35s;
+}
+
+.arrow_buttons:hover{
+    background-color:#ffffff;
+    color:#666666;
+}
+
+#left_arrow_button{
+    margin-right: 20px;
+}
+
+#left_arrow{
+    font-size: 2rem;
+    position: relative;
+    top: -5px;
+}
+
+#right_arrow{
+    font-size: 2rem;
+    position: relative;
+    top: -5px;
+}
+
 /* Slider container */
 
 #slider_container{

@@ -9,10 +9,6 @@ Table of Contents
 4.0  Media Queries
 */
 
-/* Import url for fontawesome to work */
-
-@import url("//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css");
-
 /* ====================
    1.0 Global Selectors
    ==================== */
@@ -69,7 +65,7 @@ div{
 
 .color_purple{
     color:#b585ce;
-}
+
 
 /* =================================
    2.0 HTML Element Id's and Classes
@@ -661,4 +657,3 @@ div{
     }
     
 }
-
