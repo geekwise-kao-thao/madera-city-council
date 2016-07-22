@@ -34,8 +34,9 @@ body{
 
 main{
     width:100%;
-    height:35rem;
+    height:30.5rem;
     background-color:#e6e8e7;
+    font-size:2.5rem;
 }
 
 footer{
@@ -394,22 +395,76 @@ div{
 /* Start of Main section */
 
 #most_popular_container{
-    width:60%;
+    width:68%;
     height:100%;
-    background-color:#b585ce;
-    font-size:2.5rem;
+    background-color:#af97bb;
     color:#ffffff;
     font-family: light;
     position:relative;
-    top:-40px;
+    top:-30px;
     float:left;
 }
 
 #most_popular_container > p{
     position:relative;
     top: 40px;
-    left: 75px;
+    left: 24px;
     width: 50%;
+}
+
+/* Slider container */
+
+#slider_container{
+    width:100%;
+    height: 80.5%;
+    position: relative;
+    top: -392px;
+    left: 127px;
+    overflow: hidden;
+}
+
+.slides{
+    width:325px;
+    height:100%;
+    background-color:#ffffff;
+}
+
+.popular_categories{
+    font-family: light-bold;
+    font-size: 1.5rem;
+    width: 91%;
+    display: inline-block;
+    float: right;
+    text-align: left;
+    color: #b585ce;
+    position: relative;
+    top: 25px;
+}
+
+.slide_image_container{
+    width:91%;
+    height:50%;
+    float:right;
+    background-color:#e6e8e7;
+    position:relative;
+    top:60px;
+}
+
+.date_container{
+    font-family: light-bold;
+    width: 60px;
+    height: 60px;
+    font-size: 1.3rem;
+    background-color: #b585ce;
+    position: relative;
+    top: -108px;
+    float: left;
+    color: #ffffff;
+}
+
+.date_container > p{
+    position:relative;
+    top:5px;
 }
 
 /* End of Main section */
