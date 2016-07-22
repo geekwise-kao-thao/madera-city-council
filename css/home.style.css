@@ -32,6 +32,12 @@ body{
     margin-top:12rem;
 }
 
+main{
+    width:100%;
+    height:35rem;
+    background-color:#e6e8e7;
+}
+
 footer{
     width: 100%;
     height:12rem;
@@ -385,14 +391,28 @@ div{
     color: #ffffff;
 }
 
-/* Start of Alert section*/
-/* Divider separating hero image and alert from upcoming events */
+/* Start of Main section */
 
-#divider{
-    height: 4rem;
-    width:100%;
-    background-color: #b585ce;
+#most_popular_container{
+    width:60%;
+    height:100%;
+    background-color:#b585ce;
+    font-size:2.5rem;
+    color:#ffffff;
+    font-family: light;
+    position:relative;
+    top:-40px;
+    float:left;
 }
+
+#most_popular_container > p{
+    position:relative;
+    top: 40px;
+    left: 75px;
+    width: 50%;
+}
+
+/* End of Main section */
 
 /* Footer section */
 
