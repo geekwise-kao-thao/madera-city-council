@@ -37,6 +37,7 @@ main{
     height:30.5rem;
     background-color:#e6e8e7;
     font-size:2.5rem;
+    overflow:hidden;
 }
 
 footer{
@@ -189,19 +190,41 @@ div{
     width: 5rem;
 }
 
-#hamburger_anchor{
+#menu_icon_label{
     position:relative;
     top:30px;
     left:10px;
     transition: .5s;
 }
 
+#menu_icon_label:hover{
+    cursor: pointer;
+    opacity: .8;
+}
+
 #hashtag_icon{
-    font-size:35px;
-    position: relative;
-    top:23px;
+    display:inline-block;
+}
+
+#x_icon{
+    display:none;
     color:#ffffff;
-    
+    position: relative;
+    top: -5px;
+}
+
+#menu_icon_input{
+    display:none;
+}
+
+#dropdown_menu{
+    display:none;
+    width:100%;
+    height:auto;
+}
+
+#menu_icon_input:checked + #dropdown_menu{
+    display:block;
 }
 
 #title_icon_container{
@@ -428,7 +451,7 @@ div{
     width: 30%;
     height: 90%;
     float:left;
-    border-radius:100%;
+    border-radius:50%;
     transition-duration:.35s;
 }
 
@@ -456,12 +479,13 @@ div{
 /* Slider container */
 
 #slider_container{
-    width:100%;
+    width:150%;
     height: 80.5%;
     position: relative;
     top: -392px;
     left: 127px;
     overflow: hidden;
+    transition:.5s;
 }
 
 .slides{

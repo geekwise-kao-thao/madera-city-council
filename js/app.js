@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded',function(event){
     /* on scroll event handler */
     
     var menu_bar = document.getElementById('menu_bar');
-    var hamburger_anchor = document.getElementById('hamburger_anchor');
+    var menu_icon_label = document.getElementById('menu_icon_label');
     var title_icon_container = document.getElementById('title_icon_container');
     var city_of_madera_label = document.getElementById('city_of_madera_label');
     var madera_icon_container = document.getElementById('madera_icon_container');
@@ -64,7 +64,7 @@ document.addEventListener('DOMContentLoaded',function(event){
     
         if(hero_text_container.getBoundingClientRect().top <= 192){
             menu_bar.style.height = '4.5rem';
-            hamburger_anchor.style.top = '18px';
+            menu_icon_label.style.top = '18px';
             title_icon_container.style.paddingLeft = '70px';
             madera_icon_container.style.width = '17%';
             temperature.style.top = '18px';
@@ -78,7 +78,7 @@ document.addEventListener('DOMContentLoaded',function(event){
         
         if(hero_text_container.getBoundingClientRect().top > 192){
             menu_bar.style.height = '6rem';
-            hamburger_anchor.style.top = '30px';
+            menu_icon_label.style.top = '30px';
             title_icon_container.style.paddingLeft = '37px';
             madera_icon_container.style.width = '22%';
             temperature.style.top = '30px';
@@ -145,6 +145,44 @@ document.addEventListener('DOMContentLoaded',function(event){
         fontawesome_4.style.color = '#666666';
         document.getElementById('government_anchor').style.color = '#666666';
     });
+    
+    /* hashtag icon switching to x button */
+    
+    var x_icon = document.getElementById('x_icon');
+    var hashtag_icon = document.getElementById('hashtag_icon');
+    
+    hashtag_icon.addEventListener('click',function(event){
+        
+        hashtag_icon.style.display = 'none';
+        x_icon.style.display = 'inline-block';
+        
+    });
+    
+    x_icon.addEventListener('click',function(event){
+        
+        x_icon.style.display = 'none';
+        hashtag_icon.style.display = 'inline-block';
+        
+    });
+    
+    /* right and left arrow buttons for slider */
+    
+    var left_arrow_button = document.getElementById('left_arrow_button');
+    var right_arrow_button = document.getElementById('right_arrow_button');
+    var slider_container = document.getElementById('slider_container');
+    
+    right_arrow_button.addEventListener('click',function(event){
+        slider_container.style.left = '-842px';
+    });
+    127
+    left_arrow_button.addEventListener('click',function(event){
+        slider_container.style.left = '127px'
+    });
+    
+    
+    
+    
+    
     
     
     
