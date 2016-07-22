@@ -508,11 +508,14 @@ div{
 
 .slide_image_container{
     width:91%;
-    height:50%;
+    height:auto;
     float:right;
-    background-color:#e6e8e7;
     position:relative;
     top:60px;
+}
+
+.slide_image_container > img{
+    width:100%;
 }
 
 .date_container{
