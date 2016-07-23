@@ -37,7 +37,6 @@ main{
     height:30.5rem;
     background-color:#e6e8e7;
     font-size:2.5rem;
-    overflow:hidden;
 }
 
 footer{
@@ -478,11 +477,20 @@ div{
 
 /* Slider container */
 
-#slider_container{
-    width:150%;
-    height: 80.5%;
+#overflow_container{
+    height: 80%;
+    width:100%;
+    overflow: hidden;
     position: relative;
     top: -392px;
+    left: px;
+}
+
+#slider_container{
+    width:150%;
+    height: 100%;
+    position: relative;
+    top: 0px;
     left: 127px;
     overflow: hidden;
     transition:.5s;

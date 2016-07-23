@@ -170,6 +170,7 @@ document.addEventListener('DOMContentLoaded',function(event){
     var left_arrow_button = document.getElementById('left_arrow_button');
     var right_arrow_button = document.getElementById('right_arrow_button');
     var slider_container = document.getElementById('slider_container');
+    var overflow_container = document.getElementById('overflow_container');
     
     right_arrow_button.addEventListener('click',function(event){
         slider_container.style.left = '-842px';
