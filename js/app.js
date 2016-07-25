@@ -170,7 +170,6 @@ document.addEventListener('DOMContentLoaded',function(event){
     var left_arrow_button = document.getElementById('left_arrow_button');
     var right_arrow_button = document.getElementById('right_arrow_button');
     var slider_container = document.getElementById('slider_container');
-    var overflow_container = document.getElementById('overflow_container');
     
     right_arrow_button.addEventListener('click',function(event){
         slider_container.style.left = '-842px';
@@ -183,7 +182,16 @@ document.addEventListener('DOMContentLoaded',function(event){
     
     
     
+    /*
     
+    var hero_image_container = document.getElementById('hero_image_container');
+    var main = document.getElementById('main');
+    
+    second_menu_container.style.display = 'none';
+    hero_image_container.style.display = 'none';
+    main.style.display = 'none';
+    
+    */
     
     
     

@@ -110,6 +110,10 @@ div{
     color:#000000;
 }
 
+.opacity_6:hover{
+    opacity:.6;
+}
+
 .background_color_lightgrey{
     background-color:#e6e8e7;
 }
